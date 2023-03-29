@@ -5,13 +5,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Bus implements IVehicle {
+    Motor motor;
 
     PrintTicketsService printTicketsService;
 
     @Autowired
-    public Bus(PrintTicketsService printTicketsService){
+    public Bus(Motor motor, PrintTicketsService printTicketsService){
+        this.motor = motor;
         this.printTicketsService = printTicketsService;
     }
+
     @Override
     public String travel() {
         return "The bus is transporting passengers to another city.";

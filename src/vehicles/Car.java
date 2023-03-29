@@ -4,16 +4,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 public class Car implements IVehicle {
+    Motor motor;
 
     PrintTicketsService printTicketsService;
     GasStationService gasStationService;
+
+    @Autowired
+    public void setMotor(Motor motor){
+        this.motor = motor;
+    }
 
     @Autowired(required = false)
     public void setPrintTicketsService(PrintTicketsService printTicketsService){
         this.printTicketsService = printTicketsService;
     }
 
-    @Autowired
+    @Autowired(required = false)
     private void setGasStationService(GasStationService gasStationService){
         this.gasStationService = gasStationService;
     }

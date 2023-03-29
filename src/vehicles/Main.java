@@ -16,6 +16,15 @@ public class Main {
         System.out.println(parkingLot.motorcycle.travel());
         System.out.println("\n" + rentACarService.getMaxSpeed());
 
+        parkingLot.bus.motor.setName("A123456");
+        parkingLot.bus.motor.setPower(180);
+        parkingLot.bus.motor.setNumberOfCylinders(8);
+
+        System.out.println("\nThe bus has the following specifications:" +
+                "\nName: " + parkingLot.bus.motor.getName() +
+                "\nPower: " + parkingLot.bus.motor.getPower() +
+                "\nNumber of cylinders: " + parkingLot.bus.motor.getNumberOfCylinders());
+
         context.close();
     }
 }

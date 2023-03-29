@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Motorcycle implements IVehicle {
+    @Autowired
+    Motor motor;
 
     @Autowired
     GasStationService gasStationService;
