@@ -1,11 +1,11 @@
 package vehicles;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(VehiclesConfiguration.class);
 
         ParkingLot parkingLot = context.getBean("parkingLot", ParkingLot.class);
         RentACarService rentACarService = context.getBean("rentACarService", RentACarService.class);
