@@ -1,0 +1,10 @@
+vehicles.Bus=org.springframework.stereotype.Component
+vehicles.Car=org.springframework.stereotype.Component
+vehicles.GasStationService=org.springframework.stereotype.Component
+vehicles.Motor=org.springframework.stereotype.Component
+vehicles.Motorcycle=org.springframework.stereotype.Component
+vehicles.ParkingLot=org.springframework.stereotype.Component
+vehicles.PrintTicketsService=org.springframework.stereotype.Component
+vehicles.RentACarService=org.springframework.stereotype.Component
+vehicles.VehicleServiceConfiguration=org.springframework.stereotype.Component
+vehicles.VehiclesConfiguration=org.springframework.stereotype.Component
